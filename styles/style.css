@@ -64,7 +64,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 }
 .btn{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
     color: #fff;
     border: 0;
     border-radius: 10px;
@@ -113,7 +113,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 
 /* about part css start */
 main{
-    max-width: 1140px;
+    max-width: 1100px;
     margin-top: 130px;
     margin-bottom: 130px;
 }
@@ -124,7 +124,7 @@ main{
     border-radius: 10px;
 }
 .common_text h3{
-    font-size: 35px;
+    font-size: 23px;
     font-weight: 700;
     color: var(--secondary_color1);
 }
@@ -156,14 +156,13 @@ main{
     gap: 24px;
 }
 .skill-info{
-    /* width: 267px; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 30px;
     border-radius: 5px;
 }
 .what-I-do .common_text{
+    padding: 0 150px;
     text-align: center;
-    padding: 0 156px;
     margin-top: 130px;
     margin-bottom: 30px;
 }
@@ -227,7 +226,7 @@ main{
     background: var(--primary_color);
     padding: 130px 230px;
 }
-.footer-part .row{
+.footer-part{
     display: flex;
     gap: 117px;
 }
@@ -243,6 +242,7 @@ main{
 }
 .footer-icons a{
     margin-right: 24px;
+    margin-bottom: 30px;
 }
 .message-col input[type="email"], input[type="text"], textarea{
     margin-bottom: 24px;
@@ -255,3 +255,47 @@ input{
     height: 64px;
 }
 /* footer part css end */
+
+/* responsive css */
+@media screen and (max-width:556px) {
+    .header{
+        background-image: none;
+    }
+    .skill-container,
+    .banner_row, 
+    .menu_row,
+    .menu_col ul,
+    .education-experience-part,
+    .about_container, 
+    .footer-part{
+        flex-direction: column;
+    }
+    .menu_col ul{
+        gap: 20px;
+    }
+    .menu_row,
+    .banner {
+        margin: 0 65px;
+    }
+    .banner_text .btn {
+        margin-bottom: 30px;
+    }
+    .what-I-do .common_text, .education-experience-part {
+        padding: 0px 20px;
+    }
+    .about, .footer {
+        padding: 25px;
+    }
+    .menu_head {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 557px) and (max-width: 920px) {
+    
+}
+
+
+.hide{
+    display: none;
+}
+
